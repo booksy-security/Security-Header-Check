@@ -29,7 +29,7 @@ The script will
 
 ## Usage
 ```
-git clone https://github.com/your-username/security-header-checker.git
+git clone https://github.com/booksy-security/security-header-checker.git
 cd security-header-checker
 python security_header_checker.py
 ```
