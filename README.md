@@ -29,12 +29,13 @@ The script will
 
 ## Usage
 ```
-git clone https://github.com/booksy-security/security-header-checker.git
+git clone https://github.com/booksy-security/Security-Header-Check.git
 cd security-header-checker
 python secheadercheck.py
 ```
 ## Choose Input Method
 When you run the script, you'll be prompted to choose an input method for the URLs you want to check:
+ **please use option 2 and put urls in a host file. Option 1 is not working**
  1. Enter a list of URLs separated by commas.
  2. Provide a file containing a list of hosts (one per line).
 
@@ -53,11 +54,11 @@ https://test.com
 https://anotherexample.com
 ```
 ## Review the Results
-Once the script completes its checks, it will generate a results file called `Secheader_Check_results.txt`.
+Once the script completes its checks (Errors may appear), it will generate a results file called `Secheader_Check_results.txt`.
 This file will contain detailed information on the following:
- - Missing Recommended Headers: Headers that are completely missing from the response.
- - Misconfigured Recommended Headers: Headers that are present but incorrectly configured.
- - Deprecated Headers: Headers that are deprecated (e.g., X-XSS-Protection).
+ - **Missing Recommended Headers**: Headers that are completely missing from the response.
+ - **Misconfigured Recommended Headers**: Headers that are present but incorrectly configured.
+ - **Deprecated Headers**: Headers that are deprecated (e.g., X-XSS-Protection).
 
 This was build from of the back of blkphox secheaders project, I have just modified the output for ease of reporting  with the use of AI
 https://github.com/blkph0x 
