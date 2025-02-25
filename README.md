@@ -31,7 +31,7 @@ The script will
 ```
 git clone https://github.com/booksy-security/security-header-checker.git
 cd security-header-checker
-python security_header_checker.py
+python secheadercheck.py
 ```
 ## Choose Input Method
 When you run the script, you'll be prompted to choose an input method for the URLs you want to check:
